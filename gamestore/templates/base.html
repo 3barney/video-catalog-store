@@ -9,7 +9,7 @@
 
     {% load staticfiles %}
     <link href="{% static 'styles/site.css' %}" rel='stylesheet'>
-    <link href="{% static 'styles/bootsrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'styles/font-awesome.min.css' %}" rel="stylesheet">
   </head>
 
@@ -40,6 +40,7 @@
             <li><a href="/cart/"><i class="fa fa-shopping-cart" aria-hidden="true"></i>CART </a></li>
             {% endif %}
           </ul>
+          {% include '_loginpartial.html' %}
         </div>
       </div>
     </nav>
