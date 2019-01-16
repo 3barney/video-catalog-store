@@ -13,4 +13,5 @@ urlpatterns = [
   path(r'accounts/logout', logout, {
     'next_page': '/'
   },  name='logout'),
+  path(r'accounts/signup', views.signup, name='signup'),
 ]
